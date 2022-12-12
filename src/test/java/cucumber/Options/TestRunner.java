@@ -9,6 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features="src/test/java/Features",
 		glue= {"stepdefinitions"},
+		plugin="json:target/reports/cucumberreports.json",
 		publish = true
 
 		)
